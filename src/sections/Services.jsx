@@ -30,10 +30,10 @@ const Services = () => {
         className="xl:max-w-sectionWidth max-w-[62.5rem] mx-auto"
       >
         {/* Services Section Subtitle & Description */}
-        <SectionSubtitle>What I'm Provide?</SectionSubtitle>
+        <SectionSubtitle>What I&apos;m Provide?</SectionSubtitle>
         <SectionDescription>
-          I'm providing services about Website development, Software testing and
-          Content writer that i'm gonna described below
+          I&apos;m providing services about Website development, Software
+          testing and Content writer that i&apos;m gonna described below
         </SectionDescription>
 
         {/* Services Section Content */}
@@ -75,7 +75,7 @@ const Services = () => {
                       theme === "light" ? "text-primary" : "text-altPrimary"
                     } font-semibold text-[1.2em]`}
                   >
-                    What i'm provide
+                    What i&apos;m provide
                   </h4>
                   <ul className="flex flex-col gap-y-2">
                     {services.map((service, index) => (

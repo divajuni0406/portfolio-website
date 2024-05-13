@@ -32,7 +32,7 @@ const GetInTouch = () => {
           {/* Get In Touch Text Content */}
           <div className="uppercase leading-[60px] lg:text-start text-center lg:mb-0 mb-8">
             <h4 className="lg:text-[1.2em] text-[1em] font-light leading-5">
-              Let's Talk
+              Let&apos;s Talk
             </h4>
             <h3 className="lg:text-[2.3em] text-[2em] font-normal">
               About your

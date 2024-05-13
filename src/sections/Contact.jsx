@@ -97,7 +97,7 @@ const Contact = () => {
           {/* Contact Section Card Subtitle & Description */}
           <div className="flex flex-col gap-y-2">
             <SectionSubtitle className="lg:text-[26px]">
-              Let's discuss your project
+              Let&apos;s discuss your project
             </SectionSubtitle>
             <SectionDescription className="font-medium">
               Just contact me with this media below
@@ -155,7 +155,8 @@ const Contact = () => {
               Feel free to contact me
             </SectionSubtitle>
             <SectionDescription className="font-medium">
-              I'am always open to discussing for any opportunities you offer
+              I&apos;am always open to discussing for any opportunities you
+              offer
             </SectionDescription>
           </div>
 

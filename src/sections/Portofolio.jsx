@@ -90,10 +90,11 @@ const Portofolio = () => {
         className="xl:max-w-sectionWidth max-w-[62.5rem] mx-auto"
       >
         {/* Portfolio Section Subtitle & Description */}
-        <SectionSubtitle>Project i'm created</SectionSubtitle>
+        <SectionSubtitle>Project i&apos;m created</SectionSubtitle>
         <SectionDescription>
-          I'm created a few project while i'm learing and professional working
-          about frontend development. and the project i'll explain below
+          I&apos;m created a few project while i&apos;m learing and professional
+          working about frontend development. and the project i&apos;ll explain
+          below
         </SectionDescription>
 
         {/* Portfolio Section Content */}
