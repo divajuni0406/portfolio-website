@@ -39,7 +39,7 @@ export const identity = {
   region: "Bali, Indonesia",
   description: [
     "With 2 years of experience as a frontend developer, I have combined creativity and technical expertise to create engaging and functional web designs.",
-    "Feel free to explore my works that mirror my journey in the world of web development.",
+    "Feel free to explore my portfolio showcasing my journey in the world of web development.",
   ],
   picture: ["/image/profile.jpg", "/image/about.jpg"],
   CV: "/pdf/Resume_Diva_Juni_Artha.pdf",
@@ -114,7 +114,7 @@ export const aboutExperiencesList = [
   },
   {
     number: 2,
-    title: "Programming Language Used",
+    title: "Programming Languages Used",
   },
   {
     number: 7,

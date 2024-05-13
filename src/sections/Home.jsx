@@ -60,7 +60,7 @@ const Home = () => {
               theme === "light" ? "text-[#777777]" : "text-[#a9afc3]"
             } font-semibold text-base`}
           >
-            Hello I'am
+            Hello I&apos;m
           </motion.span>
           <motion.h1
             variants={textVariants(1.2)}

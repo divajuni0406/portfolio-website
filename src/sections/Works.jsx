@@ -41,8 +41,8 @@ const Works = () => {
         <SectionTitle>Works</SectionTitle>
         <SectionSubtitle>Work Experiences</SectionSubtitle>
         <SectionDescription>
-          I&apos;m also experienced at some website development and software
-          testing that i learn for 4 month will described below
+          I also have experience in website development and software testing,
+          which I learned for 4 months. Details will be described below
         </SectionDescription>
 
         {/* Experience Section Content */}

@@ -97,8 +97,8 @@ const Experiences = () => {
                 theme === "light" ? "text-black" : "text-white"
               } font-normal lg:max-w-[750px] md:max-w-[650px] md:text-[1em] text-[0.9em] lg:text-end text-center`}
             >
-              There are some skills that i&apos;ve learning and experienced
-              below
+              Here are some of the skills that I&apos;ve learned, experienced,
+              and using:
             </motion.p>
           </motion.div>
         </motion.div>
@@ -119,8 +119,8 @@ const Experiences = () => {
                 theme === "light" ? "text-black" : "text-white"
               } font-normal lg:max-w-[750px] md:max-w-[650px] md:text-[1em] text-[0.9em] lg:text-start text-center`}
             >
-              There are some formal education & certificates that i&apos;ve
-              reached below
+              Here are some formal educations and certificates that I&apos;ve
+              achieved:
             </motion.p>
           </div>
 
