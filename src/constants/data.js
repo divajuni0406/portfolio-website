@@ -359,7 +359,7 @@ export const portfolioList = [
     title: "Sober - E Commerce Website",
     role: "Fullstack Developer - Bootcamp Final Project",
     tech: "Next JS, Tailwind CSS, Bootstrap, Redux Toolkit, MongoDB, Node JS, Express JS",
-    img: ["/image/project-Sober.png", "/image/project-Sober2.png"],
+    img: ["/image/project-sober.png", "/image/project-sober2.png"],
     isPrivate: false,
     textRedirect: "Live Preview",
     description:
