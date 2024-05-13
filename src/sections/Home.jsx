@@ -110,16 +110,16 @@ const Home = () => {
             <Image
               src={picture[0]}
               alt={"Personal Profile"}
-              width={550}
-              height={550}
+              width={500}
+              height={500}
               blurDataURL={picture[0]}
               className="object-cover"
               placeholder="blur"
               style={{
                 maskImage: "url('/image/pngItem-profile.png')",
                 maskRepeat: "no-repeat",
-                maskSize: "112%",
-                maskPosition: "-10px 10px",
+                maskSize: "120%",
+                maskPosition: "-20px 10px",
               }}
             />
           </div>
