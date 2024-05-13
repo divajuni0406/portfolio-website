@@ -46,7 +46,7 @@ const Home = () => {
         viewport={{ once: true, amount: 0.25 }}
         whileInView="show"
         initial="hidden"
-        className="xl:max-w-sectionWidth max-w-[62.5rem] mx-auto grid lg:grid-cols-2 grid-cols-1 pt-16"
+        className="xl:max-w-sectionWidth  max-w-[62.5rem] mx-auto grid lg:grid-cols-2 grid-cols-1 pt-16"
       >
         {/* Home Text Info */}
         <motion.div
@@ -106,15 +106,21 @@ const Home = () => {
           variants={slideIn("right", "tween", 0.1, 1)}
           className="flex items-center justify-center w-full h-full"
         >
-          <div className="lg:w-full w-72">
+          <div className="lg:w-full lg:flex lg:justify-center w-72">
             <Image
               src={picture[0]}
               alt={"Personal Profile"}
               width={550}
               height={550}
               blurDataURL={picture[0]}
-              className="object-cover rounded-3xl"
+              className="object-cover"
               placeholder="blur"
+              style={{
+                maskImage: "url('/image/pngItem-profile.png')",
+                maskRepeat: "no-repeat",
+                maskSize: "112%",
+                maskPosition: "-10px 10px",
+              }}
             />
           </div>
         </motion.div>

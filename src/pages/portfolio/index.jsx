@@ -27,15 +27,14 @@ const PortfolioPage = () => {
     const { isOpen, selectedModal } = openModal;
 
     if (selectedModal !== null) {
-      const { title, subtitle, img, description } =
-        allPortfolioList[selectedModal];
+      const { title, tech, img, description } = allPortfolioList[selectedModal];
 
       return (
         <Modal
           isOpen={isOpen}
           closeModal={handleCloseModal}
           title={title}
-          subtitle={subtitle}
+          tech={tech}
           img={img}
           description={description}
         />
@@ -72,7 +71,7 @@ const PortfolioPage = () => {
         {/* Portfolio Page Container */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:w-full w-[80%] lg:mx-0 mx-auto gap-10 mt-16 ">
           {allPortfolioList.map(
-            ({ title, subtitle, img, description }, index) => (
+            ({ title, tech, img, description, link }, index) => (
               <div
                 key={index}
                 className={`${
@@ -101,7 +100,7 @@ const PortfolioPage = () => {
                       theme === "light" ? "text-light" : "text-altLight"
                     } font-medium xl:text-[1em] text-[0.85em]`}
                   >
-                    {subtitle}
+                    {tech}
                   </h4>
                   <p className="font-normal text-[0.9em]">
                     {truncateString(description)}
@@ -123,7 +122,11 @@ const PortfolioPage = () => {
                     size="small"
                     className="rounded-md text-center font-medium tracking-wide"
                   >
-                    Live Preview
+                    {link == ""
+                      ? "Private"
+                      : link == "local"
+                      ? "Local"
+                      : "Live Preview"}
                   </Button>
                 </div>
               </div>

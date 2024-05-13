@@ -49,7 +49,7 @@ const Portofolio = () => {
     const { isOpen, selectedModal } = openModal;
 
     if (selectedModal !== null) {
-      const { title, subtitle, img, description } =
+      const { title, tech, role, img, description } =
         portfolioList[selectedModal];
 
       return (
@@ -57,9 +57,10 @@ const Portofolio = () => {
           isOpen={isOpen}
           closeModal={handleCloseModal}
           title={title}
-          subtitle={subtitle}
+          tech={tech}
           img={img[1]}
           description={description}
+          role={role}
         />
       );
     }
@@ -101,63 +102,82 @@ const Portofolio = () => {
           className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:w-full w-[80%] lg:mx-0 mx-auto gap-10 mt-16"
           ref={portofolioRef}
         >
-          {portfolioList.map(({ title, subtitle, img, description }, index) => (
-            <motion.div
-              variants={fadeIn("up", "tween", index * 0.1, 1)}
-              key={index}
-              className={`${
-                theme === "light"
-                  ? "bg-white hover:border-primary text-black"
-                  : "bg-altSecondary hover:border-altPrimary text-white border-transparent"
-              } p-5 shadow-cardShadow flex flex-col gap-y-4 rounded-lg border-[1.5px] transition-all duration-300 group`}
-            >
-              <div
+          {portfolioList.map(
+            (
+              {
+                title,
+                tech,
+                role,
+                img,
+                description,
+                link,
+                isPrivate,
+                textRedirect,
+              },
+              index
+            ) => (
+              <motion.div
+                variants={fadeIn("up", "tween", index * 0.1, 1)}
+                key={index}
                 className={`${
-                  theme === "light" ? "" : "border-altLight"
-                } overflow-hidden rounded-xl h-[250px] border-[3px]`}
+                  theme === "light"
+                    ? "bg-white hover:border-primary text-black"
+                    : "bg-altSecondary hover:border-altPrimary text-white border-transparent"
+                } p-5 shadow-cardShadow flex flex-col gap-y-4 rounded-lg border-[1.5px] transition-all duration-300 group`}
               >
-                <img
-                  src={img[0]}
-                  alt="Portfolio Banner"
-                  className="h-full w-full object-cover rounded-[9px] transition-all duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div className="flex flex-col gap-y-2">
-                <h3 className="font-semibold xl:text-[1.2em] lg:text-[1.1em] text-[1em]">
-                  {title}
-                </h3>
-                <h4
+                <div
                   className={`${
-                    theme === "light" ? "text-light" : "text-altLight"
-                  } font-medium xl:text-[1em] text-[0.85em]`}
+                    theme === "light" ? "" : "border-altLight"
+                  } overflow-hidden rounded-xl h-[250px] border-[3px]`}
                 >
-                  {subtitle}
-                </h4>
-                <p className="font-normal text-[0.9em]">
-                  {truncateString(description)}
-                </p>
-              </div>
-              <div className="flex items-center gap-x-5 xl:max-w-[85%] w-full mt-4">
-                <Button
-                  href={"/"}
-                  onClick={() => handleOpenModal(index)}
-                  type="primary"
-                  size="small"
-                  className="rounded-md font-medium text-center"
-                >
-                  View More
-                </Button>
-                <Button
-                  href={"/"}
-                  type="outline-primary"
-                  size="small"
-                  className="rounded-md font-medium text-center"
-                >
-                  Live Preview
-                </Button>
-              </div>
-            </motion.div>
-          ))}
+                  <img
+                    src={img[0]}
+                    alt="Portfolio Banner"
+                    className="h-full w-full object-cover rounded-[9px] transition-all duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-col gap-y-2">
+                  <h3 className="font-semibold xl:text-[1.2em] lg:text-[1.1em] text-[1em]">
+                    {title}
+                  </h3>
+                  <h4
+                    className={`${"text-light"} font-medium xl:text-[1em] text-[0.85em]`}
+                  >
+                    {role}
+                  </h4>
+                  <h4
+                    className={`${"text-light"} font-medium xl:text-[1em] text-[0.85em]`}
+                  >
+                    {tech}
+                  </h4>
+                  <p className="font-normal text-[0.9em]">
+                    {truncateString(description)}
+                  </p>
+                </div>
+                <div className="flex items-center gap-x-5 xl:max-w-[85%] w-full mt-4">
+                  <Button
+                    href={"/"}
+                    onClick={() => handleOpenModal(index)}
+                    type="primary"
+                    size="small"
+                    className="rounded-md font-medium text-center"
+                  >
+                    View More
+                  </Button>
+                  <Button
+                    href={link}
+                    blankTargetPage={true}
+                    disabled={isPrivate}
+                    type={`${isPrivate ? "" : "outline-primary"}`}
+                    size="small"
+                    className="rounded-md font-medium text-center"
+                  >
+                    {textRedirect}
+                  </Button>
+                </div>
+              </motion.div>
+            )
+          )}
         </motion.div>
 
         {/* Portfolio Modal Render */}

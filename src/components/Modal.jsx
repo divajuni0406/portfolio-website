@@ -9,9 +9,10 @@ export default function Modal({
   isOpen,
   closeModal,
   title,
-  subtitle,
+  tech,
   img,
   description,
+  role,
   ...props
 }) {
   const { theme } = useContext(ThemeContext);
@@ -36,12 +37,11 @@ export default function Modal({
             className="absolute top-0 right-0 m-5 cursor-pointer rounded-full border border-light text-[20px] text-red-500"
           />
           <h3 className="text-[1.5em] font-bold mb-2">{title}</h3>
-          <h4
-            className={`${
-              theme === "light" ? "text-light" : "text-altLight"
-            } text-[1.2em] font-semibold`}
-          >
-            {subtitle}
+          <h4 className={`${"text-light"} text-[1.2em] font-semibold`}>
+            {role}
+          </h4>
+          <h4 className={`${"text-light"} text-[1.2em] font-semibold`}>
+            {tech}
           </h4>
           <Image
             src={img}

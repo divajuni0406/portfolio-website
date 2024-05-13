@@ -9,7 +9,7 @@ import { portfolioList } from "@/constants/data";
 export default function ModalDetailPage() {
   const { query } = useRouter();
   const { modal } = query;
-  const { title, subtitle, img, description } = portfolioList[modal] || {};
+  const { title, tech, img, description } = portfolioList[modal] || {};
 
   return (
     <React.Fragment>
@@ -24,7 +24,7 @@ export default function ModalDetailPage() {
             <IoMdArrowBack className="text-[20px] text-light" />
           </Link>
           <h3 className="text-[1.5em] font-bold mb-2">{title}</h3>
-          <h4 className="text-[1.2em] font-semibold text-light">{subtitle}</h4>
+          <h4 className="text-[1.2em] font-semibold text-light">{tech}</h4>
           <img
             src={img}
             alt="Modal Banner"

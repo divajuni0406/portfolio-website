@@ -7,6 +7,7 @@ import { ThemeContext } from "@/context/ThemeContext";
 export default function Button({
   type,
   size,
+  disabled,
   className = "",
   children,
   blankTargetPage,
@@ -16,7 +17,7 @@ export default function Button({
   const isBlankTargetPage = blankTargetPage ?? false;
   return (
     <Link
-      target={isBlankTargetPage ? "_blank" : ""}
+      target={disabled ? "" : isBlankTargetPage ? "_blank" : ""}
       className={`${
         type === "primary" && theme === "light"
           ? "bg-primary border-transparent text-white hover:bg-transparent hover:border-primary hover:text-primary"

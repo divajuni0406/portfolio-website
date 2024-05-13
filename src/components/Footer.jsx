@@ -111,7 +111,7 @@ export default function Footer() {
         variants={textVariants(1.3)}
         className="text-white font-normal text-[13px]"
       >
-        © 2022 Created by Diva Juni Artha. All right reserved
+        © 2024 Created by Diva Juni Artha. All right reserved
       </motion.span>
     </motion.footer>
   );

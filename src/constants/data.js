@@ -117,7 +117,7 @@ export const aboutExperiencesList = [
     title: "Programming Language Used",
   },
   {
-    number: 6,
+    number: 7,
     title: "Professional and Personal Projects",
   },
 ];
@@ -248,7 +248,7 @@ export const exprienceList = [
     time: "Full Time",
     company: "PT.Semua Aplikasi Indonesia",
     description:
-      "I develop, manage and create any applications as a front end developer web developer and application based",
+      "I develop, manage and create any applications as a front end developer web and application based",
   },
 ];
 
@@ -299,61 +299,82 @@ export const exprienceList = [
 export const portfolioList = [
   {
     title: "IPTV - Nonton+ Dashboard",
-    subtitle: "Next JS, Material UI",
+    role: "Front End Developer",
+    tech: "Next JS, Material UI, Axios, Next Auth",
     img: ["/image/project-iptv.png", "/image/project-iptv2.png"],
     link: "",
+    isPrivate: true,
+    textRedirect: "Private",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum qui distinctio earum at sequi et dolor facilis. Vero consectetur, reprehenderit quo placeat architecto earum, provident tenetur libero laboriosam qui repellat?.",
+      "IPTV, or Internet Protocol Television, is a technology for broadcasting video content over Internet Protocol (IP) networks. The dashboard section is designed for efficient content management, statistical monitoring, and security settings. It serves as a crucial control center for service providers and system administrators.",
   },
   {
     title: "POS Application",
-    subtitle: "Flutter, Dio Network, Bloc State Managament",
+    role: "Front End Developer",
+    tech: "Flutter, Dio Network, Bloc State Managament, Freeze, GetIt",
     img: ["/image/project-posapp.png", "/image/project-posapp2.png"],
     link: "",
+    isPrivate: true,
+    textRedirect: "Private",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum qui distinctio earum at sequi et dolor facilis. Vero consectetur, reprehenderit quo placeat architecto earum, provident tenetur libero laboriosam qui repellat?.",
+      "POS App is an abbreviation for Point of Sales Application used for conducting sales transactions in F&B businesses. It aids in sales recording and streamlines business operations.",
   },
   {
     title: "POS Dashboard",
-    subtitle: "Next JS, Material UI, Redux Toolkit, Typescript",
+    role: "Front End Developer",
+    tech: "Next JS, Material UI, Redux Toolkit, Typescript, Axios, Next Auth",
     img: [
       "/image/project-posdashboard.png",
       "/image/project-posdashboard2.png",
     ],
     link: "",
+    isPrivate: true,
+    textRedirect: "Private",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum qui distinctio earum at sequi et dolor facilis. Vero consectetur, reprehenderit quo placeat architecto earum, provident tenetur libero laboriosam qui repellat?.",
+      "The dashboard section of POS is designed for efficient content management, statistical monitoring, and security settings. It serves as a crucial control center for service providers and system administrators.",
   },
   {
     title: "BLiP Website",
-    subtitle: "Next JS, Tailwind CSS",
+    role: "Front End Developer",
+    tech: "Next JS, Tailwind CSS",
     img: ["/image/project-blipweb.png", "/image/project-blipweb2.png"],
+    isPrivate: false,
+    textRedirect: "Live Preview",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum qui distinctio earum at sequi et dolor facilis. Vero consectetur, reprehenderit quo placeat architecto earum, provident tenetur libero laboriosam qui repellat?.",
-    link: "blip.net.id",
+      "A company profile website that explains various information such as: internet packages, company, location, articles, and job openings.",
+    link: "https://blip.net.id",
   },
   {
     title: "ERP System",
-    subtitle: "Next JS, Material UI, Redux Toolkit",
+    role: "Front End Developer",
+    tech: "Next JS, Material UI, Redux Toolkit, Axios, Iron Session",
     img: ["/image/project-erp.png", "/image/project-erp2.png"],
+    isPrivate: true,
+    textRedirect: "Private",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum qui distinctio earum at sequi et dolor facilis. Vero consectetur, reprehenderit quo placeat architecto earum, provident tenetur libero laboriosam qui repellat?.",
+      "Managing various business processes within a company or organization, ERP integrates data and business processes from different departments or divisions of the company into a central platform",
     link: "",
   },
   {
     title: "Sober - E Commerce Website",
-    subtitle: "Next JS, Tailwind CSS, Redux Toolkit",
+    role: "Fullstack Developer - Bootcamp Final Project",
+    tech: "Next JS, Tailwind CSS, Bootstrap, Redux Toolkit, MongoDB, Node JS, Express JS",
     img: ["/image/project-Sober.png", "/image/project-Sober2.png"],
+    isPrivate: false,
+    textRedirect: "Live Preview",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum qui distinctio earum at sequi et dolor facilis. Vero consectetur, reprehenderit quo placeat architecto earum, provident tenetur libero laboriosam qui repellat?.",
+      "Project involves developing an online platform dedicated to selling clothing or fashion items. With a user-friendly interface and secure payment system, users can easily browse, select, and purchase products electronically",
     link: "https://id-sober.vercel.app/",
   },
   {
-    title: "Simple Game Website",
-    subtitle: "EJS, Node JS, Socket IO, Swagger, MongoDB,",
+    title: "Website With Mini Game",
+    role: "Fullstack Developer - Bootcamp Project",
+    tech: "EJS, Node JS, Socket IO, Swagger, MongoDB, ExpressJS, Bootstrap",
     img: ["/image/project-webgame.png", "/image/project-webgame2.png"],
+    isPrivate: true,
+    textRedirect: "Local",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum qui distinctio earum at sequi et dolor facilis. Vero consectetur, reprehenderit quo placeat architecto earum, provident tenetur libero laboriosam qui repellat?.",
+      "A website that provides information for simple games like rock, paper, scissors that can be played single player or dual players with friends in real-time.",
     link: "local",
   },
 ];
@@ -362,14 +383,14 @@ export const allPortfolioList = [
   ...portfolioList,
   {
     title: "Starbucks Landing Page",
-    subtitle: "HTML CSS and JavaScript",
+    tech: "HTML CSS and JavaScript",
     img: "/image/project-7.png",
     description:
       "Using HTML CSS and JavaScript, I have created a static Starbucks Landing Page Website which can display information about the Starbucks's products and promote them.",
   },
   {
     title: "Pepsi Landing Page",
-    subtitle: "HTML CSS and JavaScript",
+    tech: "HTML CSS and JavaScript",
     img: "/image/project-8.png",
     description:
       "Using HTML CSS and JavaScript, I have created a static Pepsi Landing Page Website which can display information about the Pepsi's products and promote them.",
