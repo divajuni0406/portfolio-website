@@ -52,7 +52,7 @@ const Works = () => {
           ref={worksRef}
         >
           {exprienceList.map(
-            ({ years, work, time, company, description }, index) => (
+            ({ years, work, time, company, description, image }, index) => (
               <motion.div
                 variants={fadeIn("up", "tween", index * 0.2, 1)}
                 whileHover={{ scale: 1.05 }}
@@ -61,8 +61,19 @@ const Works = () => {
                   theme === "light"
                     ? "bg-white border-primary text-black"
                     : "bg-altSecondary border-altPrimary text-white"
-                } p-[35px] shadow-cardShadow rounded-md border-b-[3px] transition-all duration-300 hover:scale-105`}
+                } p-[20px] shadow-cardShadow rounded-md border-b-[3px] transition-all duration-300 hover:scale-105`}
               >
+                <div
+                  className={`${
+                    theme === "light" ? "" : "border-altLight"
+                  } overflow-hidden rounded-xl h-[250px] border-[3px] mb-3`}
+                >
+                  <img
+                    src={image[0]}
+                    alt="Portfolio Banner"
+                    className="h-full w-full object-cover rounded-[9px] transition-all duration-300 group-hover:scale-105"
+                  />
+                </div>
                 <div
                   className={`${
                     theme === "light" ? "border-light/50" : "border-altLight/50"

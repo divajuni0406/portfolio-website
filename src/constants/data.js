@@ -147,6 +147,16 @@ export const skillsList = [
     level: "Advanced",
   },
   {
+    SkillIcon: SiTailwindcss,
+    title: "Tailwind CSS",
+    level: "Advanced",
+  },
+  {
+    SkillIcon: SiBootstrap,
+    title: "Bootstrap",
+    level: "Advanced",
+  },
+  {
     SkillIcon: SiJavascript,
     title: "JavaScript",
     level: "Intermediate",
@@ -172,18 +182,8 @@ export const skillsList = [
     level: "Intermediate",
   },
   {
-    SkillIcon: SiTailwindcss,
-    title: "Tailwind CSS",
-    level: "Intermediate",
-  },
-  {
     SkillIcon: SiMaterialdesign,
     title: "Material UI",
-    level: "Intermediate",
-  },
-  {
-    SkillIcon: SiBootstrap,
-    title: "Bootstrap",
     level: "Intermediate",
   },
   {
@@ -247,6 +247,7 @@ export const exprienceList = [
     work: "Frontend Developer",
     time: "Full Time",
     company: "PT.Semua Aplikasi Indonesia",
+    image: ["/image/team_sai.png"],
     description:
       "I develop, manage and create any applications as a front end developer web and application based",
   },
@@ -441,6 +442,6 @@ export const contactCardList = [
     ContactIcon: FaWhatsapp,
     title: "Whatsapp",
     contact: "+62 821 443 662 65",
-    href: "https://api.whatsapp.com/send?phone=+6282144366265",
+    href: "https://api.whatsapp.com/send?phone=6282144366265",
   },
 ];
