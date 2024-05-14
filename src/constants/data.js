@@ -42,7 +42,7 @@ export const identity = {
     "Feel free to explore my portfolio showcasing my journey in the world of web development.",
   ],
   picture: ["/image/profile.jpg", "/image/about.jpg"],
-  CV: "/pdf/Resume_Diva_Juni_Artha.pdf",
+  CV: "/pdf/Diva-Juni-Artha_Resume.pdf",
 };
 
 export const linkList = [
