@@ -12,6 +12,7 @@ export const ThemeContext = createContext({
   setIsModalOpen: () => false,
   setIsSocialMediaRect: () => false,
   setIsDotsRect: () => false,
+  toogleTheme: () => {},
 });
 
 export function ThemeProvider({ children }) {

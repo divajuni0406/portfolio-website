@@ -299,6 +299,29 @@ export const exprienceList = [
 
 export const portfolioList = [
   {
+    title: "Netstream Website",
+    role: "Front End Developer",
+    tech: "Next JS, Tailwind CSS",
+    img: ["/image/netstream.png", "/image/netstream2.png"],
+    link: "https://dev.netstream.net.id/",
+    isPrivate: false,
+    textRedirect: "Live Preview",
+    description:
+      "NetStream is a technology that collects and analyzes network traffic statistics to help with network monitoring and accounting",
+  },
+  {
+    title: "IPTV - Nonton+ Website",
+    role: "Front End Developer",
+    tech: "Next JS, Tailwind CSS",
+    img: ["/image/iptv-website.png", "/image/iptv-website2.png"],
+    link: "https://nonton.id/",
+    isPrivate: false,
+    textRedirect: "Live Preview",
+    description:
+      "IPTV, or Internet Protocol Television, is a technology for broadcasting video content over Internet Protocol (IP) networks. The dashboard section is designed for efficient content management, statistical monitoring, and security settings. It serves as a crucial control center for service providers and system administrators.",
+  },
+
+  {
     title: "IPTV - Nonton+ Dashboard",
     role: "Front End Developer",
     tech: "Next JS, Material UI, Axios, Next Auth",
