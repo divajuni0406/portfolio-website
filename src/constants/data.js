@@ -5,7 +5,7 @@ import {
   SiReact,
   SiTailwindcss,
   SiNextdotjs,
-  SiAngular,
+  SiNuxtdotjs,
   SiBootstrap,
   SiPhp,
   SiCodeigniter,
@@ -17,6 +17,8 @@ import {
   SiTypescript,
   SiSocketdotio,
   SiRedux,
+  SiSass,
+  SiFlutter,
 } from "react-icons/si";
 import {
   FaFileCode,
@@ -38,7 +40,7 @@ export const identity = {
   ],
   region: "Bali, Indonesia",
   description: [
-    "With 2 years of experience as a frontend developer, I have combined creativity and technical expertise to create engaging and functional web designs.",
+    "With 3 years of experience as a frontend developer, I have combined creativity and technical expertise to create engaging and functional web designs.",
     "Feel free to explore my portfolio showcasing my journey in the world of web development.",
   ],
   picture: ["/image/profile.jpg", "/image/about.jpg"],
@@ -109,7 +111,7 @@ export const socialMediaList = [
 
 export const aboutExperiencesList = [
   {
-    number: 2,
+    number: 3,
     title: "Years Of Experience",
   },
   {
@@ -117,7 +119,7 @@ export const aboutExperiencesList = [
     title: "Programming Languages Used",
   },
   {
-    number: 7,
+    number: 10,
     title: "Professional and Personal Projects",
   },
 ];
@@ -159,37 +161,52 @@ export const skillsList = [
   {
     SkillIcon: SiJavascript,
     title: "JavaScript",
-    level: "Intermediate",
+    level: "Advanced",
   },
   {
     SkillIcon: SiTypescript,
     title: "Typescript",
-    level: "Intermediate",
+    level: "Advanced",
   },
   {
     SkillIcon: SiReact,
     title: "React JS",
-    level: "Intermediate",
+    level: "Advanced",
   },
   {
     SkillIcon: SiNextdotjs,
     title: "Next JS",
-    level: "Intermediate",
+    level: "Advanced",
+  },
+  {
+    SkillIcon: SiNuxtdotjs,
+    title: "Nuxt",
+    level: "Advanced",
   },
   {
     SkillIcon: SiRedux,
     title: "Redux Toolkit",
+    level: "Advanced",
+  },
+  {
+    SkillIcon: SiNodedotjs,
+    title: "Node JS",
+    level: "Advanced",
+  },
+  {
+    SkillIcon: SiSass,
+    title: "Sass",
     level: "Intermediate",
   },
   {
     SkillIcon: SiMaterialdesign,
     title: "Material UI",
-    level: "Intermediate",
+    level: "Advanced",
   },
   {
-    SkillIcon: SiNodedotjs,
-    title: "Node JS",
-    level: "Basic",
+    SkillIcon: SiSocketdotio,
+    title: "Web Socket",
+    level: "Intermediate",
   },
   {
     SkillIcon: SiExpress,
@@ -207,8 +224,8 @@ export const skillsList = [
     level: "Basic",
   },
   {
-    SkillIcon: SiSocketdotio,
-    title: "Web Socket",
+    SkillIcon: SiFlutter,
+    title: "Flutter",
     level: "Basic",
   },
 ];
@@ -243,13 +260,22 @@ export const awardList = [
 
 export const exprienceList = [
   {
-    years: "Jan 2023 - Now",
+    years: "Dec 2024 - Now",
+    work: "Frontend Developer",
+    time: "Full Time",
+    company: "Atlas Beach Fest",
+    image: ["/image/atlas-team.png"],
+    description:
+      "At Atlas, I spearheaded front-end development—managing and enhancing our customer-facing website.",
+  },
+  {
+    years: "Jan 2023 - Nov 2024",
     work: "Frontend Developer",
     time: "Full Time",
     company: "PT.Semua Aplikasi Indonesia",
     image: ["/image/team_sai.png"],
     description:
-      "I develop, manage and create any applications as a front end developer web and application based",
+      "I Developed, Managed and Built any applications as a front end developer and application based",
   },
 ];
 
@@ -298,6 +324,39 @@ export const exprienceList = [
 // ];
 
 export const portfolioList = [
+  {
+    title: "Atlas Beach Fest Website",
+    role: "Front End Developer",
+    tech: "Nuxt, SASS, Pinia",
+    img: ["/image/project-atlas.png", "/image/project-atlas2.png"],
+    link: "https://www.atlasbeachfest.com/",
+    isPrivate: false,
+    textRedirect: "Live Preview",
+    description:
+      "Managed the customer-facing website, ensuring a smooth user experience",
+  },
+  {
+    title: "Atlas Beach Fest Menu",
+    role: "Front End Developer",
+    tech: "Nuxt, Tailwind CSS, Pinia, PWA",
+    img: ["/image/project-atlas-menu.png", "/image/project-atlas-menu-2.png"],
+    link: "https://menu.atlasbeachfest.com/",
+    isPrivate: false,
+    textRedirect: "Live Preview",
+    description:
+      "Engineered an innovative Atlas Menu website using PWA with Nuxt3, enabling offline functionality, online access, and mobile installation",
+  },
+  {
+    title: "Spin Randomizer Prize System",
+    role: "Front End Developer",
+    tech: "Nuxt, Tailwind CSS, Socket.IO, Pinia",
+    img: ["/image/project-spin.png", "/image/project-spin.png"],
+    link: "",
+    isPrivate: true,
+    textRedirect: "Private",
+    description:
+      "This is landing page for admin side to spin prize. Successfully implemented a “Spin” landing page for randomized prize selection during employee gatherings, enhancing event interactivity",
+  },
   {
     title: "Netstream Website",
     role: "Front End Developer",

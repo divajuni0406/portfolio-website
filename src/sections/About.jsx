@@ -152,7 +152,7 @@ const About = () => {
               className="w-fit flex items-center rounded-[10px] gap-x-4 font-bold shadow-sm px-8 lg:mx-0 mx-auto"
               download
             >
-              Download CV <BsDownload className="text-[20px]" />
+              Download Resume <BsDownload className="text-[20px]" />
             </Button>
           </motion.div>
         </motion.div>
